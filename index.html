@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <script>
+        window.buildVersion = window.top.buildVersion;
+        window.appVersion = window.top.appVersion;
+        window.indexedDB = {};
+        window.IDBDatabase = {};
+        window.IDBTransaction = {};
+        window.IDBCursor = {};
+        window.IDBKeyRange = {};
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles-native.css" />
+    <style>
+    body,html{
+        background: black;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: rgba(0,0,0,0);
+        -webkit-border-radius: 100px;
+    }
+    ::-webkit-scrollbar:hover {
+        background-color: rgba(0, 0, 0, 0.09);
+    }
+    ::-webkit-scrollbar-thumb:vertical {
+        background: rgba(0,0,0,0.5);
+        -webkit-border-radius: 100px;
+        background-clip: padding-box;
+        border: 2px solid rgba(0, 0, 0, 0);
+        min-height: 10px;
+    }
+    ::-webkit-scrollbar-thumb:vertical:active {
+        background: rgba(0,0,0,0.61);
+        -webkit-border-radius: 100px;
+    }
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+<!-- Dependencies -->
+<script src="keymaster.js"></script>
+
+<!-- Game -->
+<script>
+  window._ = {
+      appVersion: window.appVersion,
+      buildVersion: window.buildVersion,
+      client: "android"
+  };
+</script>
+<script src="script.js"></script>
